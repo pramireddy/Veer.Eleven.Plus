@@ -1,0 +1,30 @@
+﻿<div class="vr-title-bar">
+    <div class="row"> 
+        <div class="vr-logo-area col-sm-6">
+            <img class="vr-icon" ng-src="{{iconFile}}" />
+            <div class="vr-title-area">
+                <p class="vr-logo-title">{{title}}</p>
+                <p class="vr-logo-subtitle">{{subtitle}}</p>
+            </div>
+            <div ng-if="vm.isMenuButtonVisible" ng-click="vm.menuButtonClicked()"
+                 class="vr-collapsed-menu pull-right">
+                <button type="button" class="btn vr-nav-button">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div class="vr-right-side-controls col-sm-6">
+            <div>
+                <button class="btn btn-default">Log out</button>
+             </div>
+        </div>
+    </div>
+</div>
+<div ng-transclude></div>
+
+<!--<div style="position: absolute; left:220px; top: 200px; color: red; font-size: 44px;">
+    {{vm.routeString}}
+</div>-->
+
+<div ui-view class="vr-view" ng-class="{'vr-view': vm.isMenuVisible , 'vr-view1':!vm.isMenuVisible}">
+</div>

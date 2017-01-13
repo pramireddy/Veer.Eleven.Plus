@@ -1,0 +1,75 @@
+﻿
+.vr-sidenavbar-area {
+    position: relative;
+    background-color: #333;
+    color: #ccc;
+    padding-left: 0;
+    width: 200px;
+    min-height: 100vh;
+    padding-top: 30px;
+    float:left;
+}
+
+.vr-sidenavbar-area ul {
+    padding-left: 0;
+}
+
+.vr-sidenavbar-area .btn:hover {
+    color: #ccc;
+}
+
+.vr-sidenavbar {
+    list-style-type: none;
+    vertical-align: top;
+}
+
+.vr-sidenavbar ul {
+    display: inline;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.vr-sidenavbar li {
+    line-height: 3em;
+    cursor: pointer;
+}
+
+.vr-sidenavbar li div {
+    display: inline-block;
+    width: 90%;
+    padding-left: 16px;
+}
+
+.vr-selectable-item:hover {
+    background-color: #555;
+}
+
+.vr-sidenavbar-icon {
+    margin-right: 10px;
+}
+
+.vr-sidenavbar-active-indicator {
+    float: right;
+    color: #ddd;
+    margin-right: 0;
+    margin-top: 8px;
+}
+
+.vr-noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.vr-group-indicator-left {
+    float: right;
+    color: #ddd;
+    margin-right: 2px;
+    margin-top: 15px;
+}
+
+.vr-subitem-section {
+    padding-left: 16px;
+}
+

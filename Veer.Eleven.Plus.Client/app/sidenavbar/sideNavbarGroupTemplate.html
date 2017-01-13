@@ -1,0 +1,11 @@
+﻿<li class="vr-selectable-item" ng-click="clicked()">
+    <div class="vr-noselect">
+        <i class="fa {{icon}} vr-menu-icon"></i>
+        {{label}}
+        <i class="fa fa-chevron-left vr-group-indicator-left"
+           ng-class="{'fa-rotate-270': isOpen}"></i>
+    </div>
+</li>
+<div ng-show="isOpen" class="vr-subitem-section">
+    <ul ng-transclude></ul>
+</div>

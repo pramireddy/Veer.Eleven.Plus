@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Veeresh 11 Plus Preparation</title>
+	<meta charset="utf-8" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="app/app.css" rel="stylesheet" />
+    <link href="app/topnavbar/topNavbar.css" rel="stylesheet" />
+    <link href="app/sidenavbar/sideNavbar.css" rel="stylesheet" />
+    <link href="app/dashboard/dashboard.css" rel="stylesheet" />
+
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-ui-router.min.js"></script>
+    
+    <!--side navbar-->
+    <script src="app/sidenavbar/sideNavbar.js"></script>
+    <script src="app/sidenavbar/sideNavbarController.js"></script>
+    <script src="app/sidenavbar/sideNavbarDirective.js"></script>
+    <script src="app/sidenavbar/sideNavbarGroupDirective.js"></script>
+    <script src="app/sidenavbar/sideNavbarItemDirective.js"></script>
+
+    <!---dashboard -->
+    <script src="app/dashboard/dashboard.js"></script>
+    <script src="app/dashboard/dashboardDirective.js"></script>
+
+
+    <!--top navbar-->
+    <script src="app/topnavbar/topNavbar.js"></script>
+    <script src="app/topnavbar/topNavbarDirective.js"></script>
+    <script src="app/topnavbar/topNavbarController.js"></script>
+    <script src="app/app.js"></script>
+
+    <script src="app/maths/mathsController.js"></script>
+
+</head>
+<body class="container-fluid">
+
+    <top-navbar title="Veeresh RAMIREDDY"
+                subtitle="11+ Preparation"
+                icon-file="images/smiley.png">
+        <side-navbar>
+            <!--<side-navbar-item label="Dashboard" icon="fa-dashboard" route="dashboard"></side-navbar-item>-->
+            <side-navbar-item label="Dashboard" icon="fa-dashboard" route="home"></side-navbar-item>
+            <side-navbar-item label="Maths"  icon="fa-dashboard" route="maths"></side-navbar-item>
+            <side-navbar-group label="Maths11+" icon="fa-dashboard">
+                <side-navbar-item label="Maths1" icon="fa-dashboard" route="home"></side-navbar-item>
+                <side-navbar-item label="Maths2" icon="fa-dashboard" route="maths"></side-navbar-item>
+            </side-navbar-group>
+            <side-navbar-item label="English" icon="fa-dashboard"  route="home"></side-navbar-item>
+            <side-navbar-item label="Verbal Reasoning" icon="fa-dashboard" route="maths"></side-navbar-item>
+            <side-navbar-item label="Non-Verbal Reasoning" icon="fa-dashboard" route="home"></side-navbar-item>
+
+        </side-navbar>
+
+    </top-navbar>
+
+</body>
+</html>
